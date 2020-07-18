@@ -1,0 +1,29 @@
+﻿<!-- nav -->
+
+<nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="currentUser;  else elseBlock">
+    <div class="navbar-nav">    
+        <img src="./assets/image/logo.png" height="7%" width="5%">    
+        <a class="nav-item nav-link" routerLink="/">Home</a>
+        <a class="nav-item nav-link" routerLink="/">Profile</a>
+        <a class="nav-item nav-link" routerLink="/">Schedule Interview</a>
+        <a class="nav-item nav-link" (click)="logout()">Logout</a>
+    </div>
+</nav>
+
+<ng-template #elseBlock>
+    <div class="text-center mt-4">    
+        <img src="./assets/image/PiMentor.PNG" height="26%" width="20%">    
+    </div>
+</ng-template>
+
+<!-- main app container -->
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
+
+<!-- credits -->
+<div class="text-center mt-4">
+    <p>
+        PiMentor All Rights Reserved, 2020
+    </p>
+</div>
