@@ -5,6 +5,8 @@ import { AuthenticationService } from '@app/_services';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { first } from 'rxjs/operators';
+import { MatTabsModule } from '@angular/material/tabs';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @Component({ templateUrl: 'login.component.html' })
@@ -13,7 +15,9 @@ import { first } from 'rxjs/operators';
     LoginComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MatTabsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [LoginComponent]

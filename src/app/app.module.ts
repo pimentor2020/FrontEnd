@@ -21,7 +21,9 @@ import { InterviewScheduleComponent } from './interview-schedule/interview-sched
         BrowserModule,
         ReactiveFormsModule,
         HttpClientModule,
-        appRoutingModule
+        appRoutingModule,
+        MatTabsModule,
+        BrowserAnimationsModule
     ],
     declarations: [
         AppComponent,
